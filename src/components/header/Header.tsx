@@ -18,6 +18,7 @@ export const Header = () => {
                         width={160}
                         height={48}
                         className="w-[120px] h-auto tablet:w-40"
+                        loading="eager"
                     />
                 </div>
                 <Navigation />

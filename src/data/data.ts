@@ -52,6 +52,29 @@ export const siteData = {
 
     description: "Опис перевізника",
     services: "Обслуговуємо країни",
+
+    statistics: {
+        experience: {
+            title: "На ринку від:",
+            icon: "fire",
+        },
+        employees: {
+            title: "Перевезених пасажирів",
+            icon: "people",
+        },
+        industry: {
+            title: "Автопарк",
+            icon: "bus",
+        },
+        services: {
+            title: "Обслуговуємо",
+            icon: "location",
+        },
+        location: {
+            title: "Місто",
+            icon: "city",
+        },
+    },
 };
 
 export const availableCountries = [
@@ -64,20 +87,3 @@ export const availableCountries = [
     { title: "Литва", value: "lt", flag: lt },
     { title: "Португалія", value: "pt", flag: pt },
 ];
-
-export const renderData = {
-    name: "Stripe",
-    total: "43 Поїздок",
-    webSite: "https://stripe.com",
-    phone: "+38 (073) 555 55 55",
-    statistics: {
-        experience: "Травень  31, 2011",
-        totalPassengers: "4000+",
-        carPark: "8 бусів",
-        services: "8 країн",
-        location: "Львів",
-    },
-    description:
-        "Stripe is a software platform for starting and running internet businesses. Millions of businesses rely on Stripe’s software tools to accept payments, expand globally, and manage their businesses online. Stripe has been at the forefront of expanding internet commerce, powering new business models, and supporting the latest platforms, from marketplaces to mobile commerce sites. We believe that growing the GDP of the internet is a problem rooted in code and design, not finance. Stripe is built for developers, makers, and creators. We work on solving the hard technical problems necessary to build global economic infrastructure—from designing highly reliable systems to developing advanced machine learning algorithms to prevent fraud.",
-    countries: ["fr", "it", "de", "nl", "es", "Czechia", "lt", "pt"],
-};

@@ -11,6 +11,7 @@
 
     --color-primary: #4640de;
     --color-accent-blue: #26a4ff;
+    --color-secondary: #ccccf5;
     --color-neutrals-0: #ffffff;
     --color-neutrals-10: #f8f8fd;
     --color-neutrals-60: #7c8493;
@@ -49,6 +50,8 @@
     --text-display-large--line-height: 1.6;
 
     --container-7xl: 90rem;
+
+    --font-lato: var(--font-lato);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -62,6 +65,18 @@ body {
     background: var(--background);
     color: var(--foreground);
     font-family: var(--font-rubik), san-serif;
+}
+
+@media (max-width: 320px) {
+    html {
+        transform: scale(calc(100vw / 320));
+        transform-origin: top left;
+    }
+
+    body {
+        width: 320px;
+        overflow-x: hidden;
+    }
 }
 
 @utility wrapper {

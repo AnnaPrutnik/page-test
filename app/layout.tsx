@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Rubik, Lato } from "next/font/google";
+import { Rubik } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/src/components/header/Header";
 import { Footer } from "@/src/components/footer/Footer";
@@ -10,9 +11,15 @@ const rubikFont = Rubik({
     weight: ["400", "600"],
 });
 
-const latoFont = Lato({
-    variable: "--font-Lato",
-    weight: ["700"],
+const latoFont = localFont({
+    src: [
+        {
+            path: "../src/fonts/lato/Lato-Black.woff2",
+            weight: "800",
+            style: "normal",
+        },
+    ],
+    variable: "--font-lato",
 });
 
 export const metadata: Metadata = {
