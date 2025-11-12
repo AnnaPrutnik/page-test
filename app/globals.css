@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+@theme inline {
+    --breakpoint-tablet: 768px;
+    --breakpoint-desktop: 1440px;
+
+    --color-primary: #4640de;
+    --color-accent-blue: #26a4ff;
+    --color-neutrals-0: #ffffff;
+    --color-neutrals-10: #f8f8fd;
+    --color-neutrals-60: #7c8493;
+    --color-neutrals-80: #515b6f;
+    --color-neutrals-100: #25324b;
+
+    --color-disabled: #d6ddeb;
+
+    --text-heading1: 40px;
+    --text-heading--line-height: 1.3;
+    --text-heading2: 48px;
+    --text-heading2--line-height: 1.1;
+    --text-heading3: 32px;
+    --text-heading3--line-height: 1.2;
+    --text-heading4: 24px;
+    --text-heading4--line-height: 1.2;
+    --text-heading5: 20px;
+    --text-heading5--line-height: 1.2;
+    --text-heading: 58px;
+    --text-heading--line-height: 1.1;
+    --text-small: 14px;
+    --text-small--line-height: 1.6;
+    --text-normal: 16px;
+    --text-normal--line-height: 1.6;
+    --text-large: 18px;
+    --text-large--line-height: 1.6;
+    --text-x-large: 20px, --text-x-large--line-height: 1.6;
+    --text-btn-small: 14px;
+    --text-btn-small--line-height: 1.6;
+    --text-btn-large: 18px;
+    --text-btn-large--line-height: 1.6;
+    --text-btn-normal: 16px;
+    --text-btn-normal--line-height: 1.6 --text-display-small: 20px;
+    --text-display-small--line-height: 1.6 --text-display-normal: 48px;
+    --text-display-normal--line-height: 1.6 --text-display-large: 72px;
+    --text-display-large--line-height: 1.6;
+
+    --container-7xl: 90rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-rubik), san-serif;
+}
+
+@utility wrapper {
+    padding-inline: 16px;
+
+    @variant tablet {
+        padding-inline: 48px;
+    }
+
+    @variant desktop {
+        padding-inline: 124px;
+    }
+}
