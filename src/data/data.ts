@@ -72,6 +72,7 @@ export const siteData = {
     team: {
         title: "Наші водії",
         allTeam: "Усі водії",
+        experienceTitle: "Досвід роботи:",
     },
 
     statistics: {

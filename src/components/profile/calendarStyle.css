@@ -1,13 +1,31 @@
 .rdp-root {
-    --rdp-day-width: 42px;
-    --rdp-day-height: 36px;
-    --rdp-day_button-width: 42px;
-    --rdp-day_button-height: 36px;
+    --rdp-day-width: 32px;
+    --rdp-day-height: 28px;
+    --rdp-day_button-width: 32px;
+    --rdp-day_button-height: 28px;
     --rdp-accent-color: var(--color-primary);
     --rdp-selected-border: transparent;
+
+    @media screen and (width >= 768px) {
+        --rdp-day-width: 38px;
+        --rdp-day-height: 32px;
+        --rdp-day_button-width: 38px;
+        --rdp-day_button-height: 32px;
+    }
+
+    @media screen and (width >= 1440px) {
+        --rdp-day-width: 42px;
+        --rdp-day-height: 36px;
+        --rdp-day_button-width: 42px;
+        --rdp-day_button-height: 36px;
+    }
 }
 
 .text-styles {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.6;
+
+    @media screen and (width >= 768px) {
+        font-size: 14px;
+    }
 }
