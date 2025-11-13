@@ -1,9 +1,13 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 import { Sprite } from "../shared/Sprite";
-import { siteData, availableCountries } from "@/src/data/data";
+import {
+    siteData,
+    availableCountries,
+    AvailableCountryCode,
+} from "@/src/data/data";
 
 const VISIBLE_ITEMS = 5;
 
@@ -12,7 +16,7 @@ const {
 } = siteData;
 
 interface CountriesProps {
-    countriesList: string[];
+    countriesList: AvailableCountryCode[];
 }
 
 export const Countries = ({ countriesList }: CountriesProps) => {

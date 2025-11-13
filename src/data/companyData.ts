@@ -9,6 +9,9 @@ import profile1 from "@/src/assets/profileCompany/team/profile1.jpg";
 import profile2 from "@/src/assets/profileCompany/team/profile2.jpg";
 import profile3 from "@/src/assets/profileCompany/team/yulia.jpg";
 
+import { AvailableCountryCode } from "./data";
+import { AvailableBenefitsCode } from "./data";
+
 export type GalleryItemType = {
     alt: string;
     href: StaticImageData;
@@ -33,11 +36,12 @@ interface CompanyDataType {
     phone: string;
     statistics: Record<string, string>;
     description: string;
-    countries: string[];
+    countries: AvailableCountryCode[];
     socials: Record<string, string>;
     gallery: GalleryItemType[];
     availableDates: Date[];
     team: TeammateType[];
+    availableBenefits: AvailableBenefitsCode[];
 }
 export const companyData: CompanyDataType = {
     logo: companyLogo,
@@ -135,4 +139,5 @@ export const companyData: CompanyDataType = {
             },
         },
     ],
+    availableBenefits: ["mode", "wifi", "tv", "wc", "seats", "pets"],
 };

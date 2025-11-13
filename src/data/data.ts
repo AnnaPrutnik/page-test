@@ -7,15 +7,6 @@ import nl from "@/src/assets/flags/nl.jpg";
 import lt from "@/src/assets/flags/lt.png";
 import pt from "@/src/assets/flags/pr.jpg";
 import logo from "@/src/assets/images/logo-header.png";
-import { StaticImageData } from "next/image";
-
-interface AvailableCountyType {
-    [key: string]: {
-        title: string;
-        value: string;
-        flag: StaticImageData;
-    };
-}
 
 export const siteData = {
     logo: {
@@ -75,6 +66,11 @@ export const siteData = {
         experienceTitle: "Досвід роботи:",
     },
 
+    benefits: {
+        title: "Сервіс",
+        description: "Найкращі умови для вашого комфорту",
+    },
+
     statistics: {
         experience: {
             title: "На ринку від:",
@@ -99,7 +95,7 @@ export const siteData = {
     },
 };
 
-export const availableCountries: AvailableCountyType = {
+export const availableCountries = {
     fr: { title: "Франція", value: "fr", flag: fr },
     it: { title: "Італія", value: "it", flag: it },
     de: { title: "Німеччина", value: "de", flag: de },
@@ -108,4 +104,26 @@ export const availableCountries: AvailableCountyType = {
     cz: { title: "Чехія", value: "cz", flag: cz },
     lt: { title: "Литва", value: "lt", flag: lt },
     pt: { title: "Португалія", value: "pt", flag: pt },
-};
+} as const;
+
+export type AvailableCountryCode = keyof typeof availableCountries;
+
+export const availableBenefitsList = {
+    mode: {
+        title: "Кондиціонер",
+        icon: "mode-fan",
+    },
+    tv: {
+        title: "TV",
+        icon: "tv",
+    },
+    wifi: {
+        title: "Wi-Fi",
+        icon: "wifi",
+    },
+    wc: { title: "Туалет", icon: "wc" },
+    seats: { title: "Зручні сидіння", icon: "sofa" },
+    pets: { title: "Перевозимо тварин", icon: "animals" },
+} as const;
+
+export type AvailableBenefitsCode = keyof typeof availableBenefitsList;
