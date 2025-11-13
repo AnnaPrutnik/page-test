@@ -7,6 +7,15 @@ import nl from "@/src/assets/flags/nl.jpg";
 import lt from "@/src/assets/flags/lt.png";
 import pt from "@/src/assets/flags/pr.jpg";
 import logo from "@/src/assets/images/logo-header.png";
+import { StaticImageData } from "next/image";
+
+interface AvailableCountyType {
+    [key: string]: {
+        title: string;
+        value: string;
+        flag: StaticImageData;
+    };
+}
 
 export const siteData = {
     logo: {
@@ -18,6 +27,7 @@ export const siteData = {
     buttonTitles: {
         create: "Створити профіль",
         login: "Увійти",
+        buyTicket: "Купити квиток",
     },
     ariaLabels: {
         create: "Створити профіль",
@@ -50,8 +60,19 @@ export const siteData = {
     ],
     breadcrumbs: ["Головна", "Профіль перевізника", "Stripe"],
 
-    description: "Опис перевізника",
-    services: "Обслуговуємо країни",
+    profile: {
+        title: "Профайл компанії",
+        description: "Опис перевізника",
+        services: "Обслуговуємо країни",
+        socials: "Ми у соц. мережах",
+        calendar: "Календар поїздок",
+        allCountries: "Усі країни",
+        gallery: "Галерея зображень",
+    },
+    team: {
+        title: "Наші водії",
+        allTeam: "Усі водії",
+    },
 
     statistics: {
         experience: {
@@ -77,13 +98,13 @@ export const siteData = {
     },
 };
 
-export const availableCountries = [
-    { title: "Франція", value: "fr", flag: fr },
-    { title: "Італія", value: "it", flag: it },
-    { title: "Німеччина", value: "de", flag: de },
-    { title: "Нідерланди", value: "nl", flag: nl },
-    { title: "Іспанія", value: "es", flag: es },
-    { title: "Чехія", value: "cz", flag: cz },
-    { title: "Литва", value: "lt", flag: lt },
-    { title: "Португалія", value: "pt", flag: pt },
-];
+export const availableCountries: AvailableCountyType = {
+    fr: { title: "Франція", value: "fr", flag: fr },
+    it: { title: "Італія", value: "it", flag: it },
+    de: { title: "Німеччина", value: "de", flag: de },
+    nl: { title: "Нідерланди", value: "nl", flag: nl },
+    es: { title: "Іспанія", value: "es", flag: es },
+    cz: { title: "Чехія", value: "cz", flag: cz },
+    lt: { title: "Литва", value: "lt", flag: lt },
+    pt: { title: "Португалія", value: "pt", flag: pt },
+};

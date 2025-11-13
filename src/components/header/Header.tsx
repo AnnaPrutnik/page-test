@@ -9,21 +9,23 @@ const {
 
 export const Header = () => {
     return (
-        <header className="wrapper flex justify-between items-center py-3.5 bg-green">
-            <div className="flex gap-12 items-center">
-                <div>
-                    <Image
-                        src={header.src}
-                        alt={header.alt}
-                        width={160}
-                        height={48}
-                        className="w-[120px] h-auto tablet:w-40"
-                        loading="eager"
-                    />
+        <header>
+            <div className="wrapper flex justify-between items-center py-3.5">
+                <div className="flex gap-12 items-center">
+                    <div>
+                        <Image
+                            src={header.src}
+                            alt={header.alt}
+                            width={160}
+                            height={48}
+                            className="w-[120px] h-auto tablet:w-40"
+                            loading="eager"
+                        />
+                    </div>
+                    <Navigation />
                 </div>
-                <Navigation />
+                <Actions />
             </div>
-            <Actions />
         </header>
     );
 };

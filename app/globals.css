@@ -14,6 +14,7 @@
     --color-secondary: #ccccf5;
     --color-neutrals-0: #ffffff;
     --color-neutrals-10: #f8f8fd;
+    --color-neutrals-20: #d6ddeb;
     --color-neutrals-60: #7c8493;
     --color-neutrals-80: #515b6f;
     --color-neutrals-100: #25324b;
@@ -52,6 +53,8 @@
     --container-7xl: 90rem;
 
     --font-lato: var(--font-lato);
+
+    --shadow-calendar: 0px 4px 4px 0px #00000040;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -62,9 +65,8 @@
 }
 
 body {
-    background: var(--background);
-    color: var(--foreground);
     font-family: var(--font-rubik), san-serif;
+    color: var(--color-neutrals-80);
 }
 
 @media (max-width: 320px) {
@@ -81,6 +83,8 @@ body {
 
 @utility wrapper {
     padding-inline: 16px;
+    max-width: 1800px;
+    margin: 0 auto;
 
     @variant tablet {
         padding-inline: 48px;
@@ -89,4 +93,40 @@ body {
     @variant desktop {
         padding-inline: 124px;
     }
+}
+
+@utility visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@utility section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @variant tablet {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    @variant desktop {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+}
+
+@utility subtitle {
+    @apply font-lato font-extrabold text-heading4 desktop:text-heading3 text-neutrals-100;
+}
+
+@utility data {
+    @apply text-small tablet:text-normal text-balance;
 }

@@ -1,0 +1,13 @@
+.rdp-root {
+    --rdp-day-width: 42px;
+    --rdp-day-height: 36px;
+    --rdp-day_button-width: 42px;
+    --rdp-day_button-height: 36px;
+    --rdp-accent-color: var(--color-primary);
+    --rdp-selected-border: transparent;
+}
+
+.text-styles {
+    font-size: 16px;
+    line-height: 1.6;
+}

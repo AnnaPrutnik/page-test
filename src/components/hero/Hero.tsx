@@ -27,9 +27,9 @@ export const Hero = () => {
                         </div>
 
                         <div className="flex flex-col tablet:flex-row gap-3 items-start tablet:items-center">
-                            <p className="text-heading3 tablet:text-heading2 text-neutrals-100 font-lato font-extrabold">
+                            <h1 className="text-heading3 tablet:text-heading2 text-neutrals-100 font-lato font-extrabold">
                                 {name}
-                            </p>
+                            </h1>
                             <div>
                                 <div className="border border-primary px-3 py-1">
                                     <p className="text-primary text-small tablet:text-normal">
