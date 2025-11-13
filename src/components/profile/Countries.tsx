@@ -98,7 +98,7 @@ export const Countries = ({ countriesList }: CountriesProps) => {
 
             <div className="mb-6">
                 <button
-                    className="cursor-pointer flex gap-2 tablet:gap-4 text-primary hover:text-accent-blue active:text-accent-blue data font-semibold"
+                    className="cursor-pointer flex gap-2 tablet:gap-4 text-primary link-actions data font-semibold"
                     onClick={onToggleShowMore}
                 >
                     {allCountries}

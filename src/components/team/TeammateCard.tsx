@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Sprite } from "../shared/Sprite";
 import { siteData } from "@/src/data/data";
 import { TeammateType } from "@/src/data/companyData";
@@ -36,11 +37,18 @@ export const TeammateCard = ({
             </div>
             <ul className="flex gap-3 justify-center">
                 {Object.entries(socials).map(([key, value]) => (
-                    <li key={key} className="text-neutrals-8s0">
-                        <Sprite
-                            name={`icon-${key}`}
-                            className="size-5 tablet:size-6 stroke-current"
-                        />
+                    <li key={key}>
+                        <Link
+                            href={value}
+                            arial-label={`Посилання на ${key}`}
+                            target="_blank"
+                            className="text-neutrals-80 link-actions"
+                        >
+                            <Sprite
+                                name={`icon-${key}`}
+                                className="size-5 tablet:size-6 stroke-current opacity-50"
+                            />
+                        </Link>
                     </li>
                 ))}
             </ul>

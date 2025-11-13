@@ -20,7 +20,7 @@ export const SocialItems = ({ socialList }: SocialItemsProps) => {
                         <Link
                             href={`https://${value}`}
                             target="_blank"
-                            className=" border text-primary border-current flex p-1 tablet:p-2 gap-2 tablet:gap-4 data hover:text-accent-blue active:text-accent-blue"
+                            className=" border text-primary border-current flex p-1 tablet:p-2 gap-2 tablet:gap-4 data link-actions"
                         >
                             <Sprite
                                 name={`icon-${key}`}

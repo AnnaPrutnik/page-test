@@ -15,10 +15,12 @@
     --color-neutrals-0: #ffffff;
     --color-neutrals-10: #f8f8fd;
     --color-neutrals-20: #d6ddeb;
+    --color-neutrals-30: #d0d4ea;
+    --color-neutrals-40: #a8adb7;
     --color-neutrals-60: #7c8493;
     --color-neutrals-80: #515b6f;
     --color-neutrals-100: #25324b;
-
+    --color-dark-bg: #202430;
     --color-disabled: #d6ddeb;
 
     --text-heading1: 40px;
@@ -129,4 +131,12 @@ body {
 
 @utility data {
     @apply text-small tablet:text-normal text-balance;
+}
+
+@utility footer-subtitle {
+    @apply block text-normal tablet:text-large font-semibold text-neutrals-0 mb-[18px];
+}
+
+@utility link-actions {
+    @apply hover:text-accent-blue active:text-accent-blue transition-colors duration-300;
 }

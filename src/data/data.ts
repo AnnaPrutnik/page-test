@@ -6,12 +6,13 @@ import it from "@/src/assets/flags/it.jpg";
 import nl from "@/src/assets/flags/nl.jpg";
 import lt from "@/src/assets/flags/lt.png";
 import pt from "@/src/assets/flags/pr.jpg";
-import logo from "@/src/assets/images/logo-header.png";
+import logoHeader from "@/src/assets/images/logo-header.png";
+import logoFooter from "@/src/assets/images/logo-footer.png";
 
 export const siteData = {
     logo: {
         header: {
-            src: logo,
+            src: logoHeader,
             alt: "logo Printers Перевізники Європи",
         },
     },
@@ -19,6 +20,8 @@ export const siteData = {
         create: "Створити профіль",
         login: "Увійти",
         buyTicket: "Купити квиток",
+        leaveFeedback: "Залишити відгук",
+        send: "Надіслати",
     },
     ariaLabels: {
         create: "Створити профіль",
@@ -91,6 +94,82 @@ export const siteData = {
         location: {
             title: "Місто",
             icon: "city",
+        },
+        testimonials: {
+            title: "Що *accent*кажуть люди*/accent*?",
+            description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        },
+    },
+    footer: {
+        logo: logoFooter,
+        text: "Платформа пошуку перевізників та бронювання поїздок",
+        menu: {
+            client: {
+                title: "Клієнтам",
+                href: "#",
+                submenu: [
+                    {
+                        title: "Головна",
+                        href: "#",
+                    },
+                    {
+                        title: "Про нас",
+                        href: "#",
+                    },
+                    {
+                        title: "Ціни",
+                        href: "#",
+                    },
+                    {
+                        title: "Маршрути",
+                        href: "#",
+                    },
+                    {
+                        title: "Політика приватності",
+                        href: "#",
+                    },
+                ],
+            },
+            cargoCompanies: {
+                title: "Перевізникам",
+                href: "#",
+                submenu: [
+                    {
+                        title: "Help Docs",
+                        href: "#",
+                    },
+
+                    {
+                        title: "Особистий кабінет",
+                        href: "#",
+                    },
+                    {
+                        title: "Оновлення",
+                        href: "#",
+                    },
+                    {
+                        title: "Контакти",
+                        href: "#",
+                    },
+                ],
+            },
+        },
+        feedback: {
+            title: "Зворотній зв’язок",
+            text: "Маєш пропозиції щодо покращення сервісу - пиши нам!",
+            placeholder: "Email Address",
+            phone: "+ 38 (073) 555 55 55",
+            email: "gmail@gmail.com",
+        },
+        copyright: "2024 @ Sprinters. All rights reserved.",
+        socials: {
+            facebook: "https://www.facebook.com/worldofdance",
+            instagram: "https://www.instagram.com/word_of_dance19/",
+            dribbble:
+                "https://dribbble.com/shots/26765480-MoonRow-Ticket-Sales-Analytics-Mobile-Apps",
+            linkedin: "https://www.linkedin.com/company/yellowduckcoders/",
+            twitter: "https://x.com/stripe",
         },
     },
 };
