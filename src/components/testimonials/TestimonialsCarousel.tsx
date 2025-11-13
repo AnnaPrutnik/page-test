@@ -30,7 +30,6 @@ export const TestimonialsCarousel = () => {
 
                 setOffset(gap);
 
-                console.log("totalSlides", totalSlides);
                 setTotalSlides(totalSlides);
             }
         };

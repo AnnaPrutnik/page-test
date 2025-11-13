@@ -57,7 +57,7 @@ export default function RootLayout({
                     sizes="180x180"
                     href="/apple-touch-icon.png"
                 />
-                <link rel="manifest" href="/manifest" />
+                <link rel="manifest" href="/manifest.json" />
             </head>
             <body>
                 <div className="min-h-screen flex flex-col">
