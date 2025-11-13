@@ -9,7 +9,7 @@ const {
 
 export const Menu = () => {
     return (
-        <div className="flex gap-[50px]">
+        <div className="flex flex-wrap gap-[50px]">
             <div>
                 <Link
                     href={client.href}

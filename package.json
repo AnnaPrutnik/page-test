@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "debounce": "^3.0.0",
     "formik": "^2.4.9",
     "motion": "^12.23.24",
     "next": "16.0.1",

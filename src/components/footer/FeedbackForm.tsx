@@ -31,7 +31,7 @@ export const FeedbackForm = () => {
         >
             {({ errors, touched }) => (
                 <Form className="mb-5">
-                    <div className="flex gap-2">
+                    <div className="flex flex-col tablet:flex-row gap-2">
                         <label
                             htmlFor="email"
                             aria-label={placeholder}
@@ -54,6 +54,7 @@ export const FeedbackForm = () => {
                         <Button
                             view="primary"
                             type="submit"
+                            className="max-w-[250px] "
                             disabled={!!(errors.email && touched.email)}
                         >
                             {send}

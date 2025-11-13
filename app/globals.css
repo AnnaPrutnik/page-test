@@ -47,14 +47,18 @@
     --text-btn-large: 18px;
     --text-btn-large--line-height: 1.6;
     --text-btn-normal: 16px;
-    --text-btn-normal--line-height: 1.6 --text-display-small: 20px;
-    --text-display-small--line-height: 1.6 --text-display-normal: 48px;
-    --text-display-normal--line-height: 1.6 --text-display-large: 72px;
+    --text-btn-normal--line-height: 1.6;
+    --text-display-small: 20px;
+    --text-display-small--line-height: 1.6;
+    --text-display-normal: 48px;
+    --text-display-normal--line-height: 1.6;
+    --text-display-large: 72px;
     --text-display-large--line-height: 1.6;
 
     --container-7xl: 90rem;
 
     --font-lato: var(--font-lato);
+    --font-roboto: var(--font-roboto);
 
     --shadow-calendar: 0px 4px 4px 0px #00000040;
 }
@@ -139,4 +143,27 @@ body {
 
 @utility link-actions {
     @apply hover:text-accent-blue active:text-accent-blue transition-colors duration-300;
+}
+
+@utility testimonial-shadow {
+    box-shadow: 0px 4px 16px 0px #25324b26;
+}
+
+@utility testimonial-name {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+
+    @variant desktop {
+        font-size: 24px;
+    }
+}
+
+@utility testimonial-text {
+    font-size: 12px;
+    line-height: 1;
+
+    @variant tablet {
+        font-size: 14px;
+    }
 }

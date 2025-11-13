@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Rubik } from "next/font/google";
+import { Rubik, Roboto } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/src/components/header/Header";
@@ -7,6 +7,12 @@ import { Footer } from "@/src/components/footer/Footer";
 
 const rubikFont = Rubik({
     variable: "--font-rubik",
+    subsets: ["latin"],
+    weight: ["400", "500", "600"],
+});
+
+const robotoFont = Roboto({
+    variable: "--font-roboto",
     subsets: ["latin"],
     weight: ["400", "500", "600"],
 });
@@ -35,7 +41,7 @@ export default function RootLayout({
     return (
         <html
             lang="ua"
-            className={`${rubikFont.variable} ${latoFont.variable}`}
+            className={`${rubikFont.variable} ${latoFont.variable} ${robotoFont.variable}`}
         >
             <head>
                 <link
