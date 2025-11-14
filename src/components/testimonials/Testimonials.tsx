@@ -13,10 +13,10 @@ export const Testimonials = () => {
     const coloredTitle = title.split(/(\*accent\*.*?\*\/accent\*)/g);
 
     return (
-        <section className="bg-neutrals-10 relative text-neutrals-100">
+        <section className="bg-neutrals-10 relative text-neutrals-100 overflow-hidden">
             <div className="relative z-1">
                 <Decoration />
-                <div className="wrapper section desktop:pb-[42px] overflow-hidden">
+                <div className="wrapper section desktop:pb-[42px] ">
                     <div className="flex flex-col desktop:flex-row gap-8">
                         <div className="desktop:w-[422px] shrink-0 grow-0">
                             <h3 className="text-heading4 tablet:text-heading3 desktop:text-heading2 font-extrabold font-lato mb-[22px]">
