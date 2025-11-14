@@ -47,7 +47,7 @@ export const MobileNavigation = () => {
             </Button>
             <nav
                 className={twMerge(
-                    "fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-neutrals-0 transition-transform duration-500",
+                    "fixed top-0 left-0 right-0 bottom-0 z-10 flex items-center justify-center bg-neutrals-0 transition-transform duration-500",
                     isOpen
                         ? "translate-x-0 scale-100"
                         : "translate-x-full scale-0"
